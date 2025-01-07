@@ -9,5 +9,7 @@ temp=int(input("Enter the temperature to convert:"))
 user_temp = input("Is this temperature in Celsius or Fahrenheit? (C/F):")
 if user_temp == "C" :
    print(convert_to_fahrenheit(temp))
-else:
+elif user_temp == "F" :
    print(convert_to_celsius(temp))
+else:
+   print("Invalid temperature. Please enter a numeric value.")   
