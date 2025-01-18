@@ -1,10 +1,10 @@
-# main-0.py
+
 
 import sys
 from bank_account import BankAccount
 
 def main():
-    # Initialize BankAccount with a default starting balance of 100
+  
     account = BankAccount(100)
 
     if len(sys.argv) < 2:
@@ -12,7 +12,7 @@ def main():
         print("Commands: deposit, withdraw, display")
         sys.exit(1)
 
-    # Parse command line argument
+   
     command, *params = sys.argv[1].split(':')
     amount = float(params[0]) if params else None
 
